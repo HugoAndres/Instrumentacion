@@ -1,0 +1,117 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005-006 MAIN.a
+005-008 atan2.y
+007     MAIN.temp
+008     @PSTRINGCN_672.P1
+008     lcd_init.i
+008     @PRINTF_U_672.P1
+008-009 @MUL1616.P2
+008     MAIN.@SCRATCH1
+009-00C atan2.x
+009-00C lcd_init.LCD_INIT_STRING
+009     @PRINTF_U_672.P1
+009     MAIN.@SCRATCH2
+009     @PSTRINGCN_672.@SCRATCH1
+00A     @DIV88.P1
+00A-00B @DIV1616.P2
+00A-00B @MUL1616.P3
+00A     @PSTRINGCN_672.@SCRATCH2
+00B     lcd_putc.c
+00B     @DIV88.P1
+00C-00D @DIV1616.P1
+00C     lcd_gotoxy.x
+00C     @MUL1616.@SCRATCH1
+00C     @DIV88.@SCRATCH1
+00D-010 atan2.z
+00D     lcd_gotoxy.y
+00D     @delay_ms1.P1
+00D     lcd_init.@SCRATCH1
+00E     lcd_gotoxy.address
+00E     @DIV1616.@SCRATCH1
+00F     lcd_gotoxy.@SCRATCH1
+010     lcd_send_byte.address
+011.0   atan2.sign
+011     lcd_send_byte.n
+012     atan2.quad
+012     lcd_read_byte.low
+012     lcd_send_byte.@SCRATCH1
+013     lcd_send_nibble.n
+013     lcd_read_byte.high
+014     lcd_read_byte.@SCRATCH1
+F83     PSP_DATA
+F83     lcd
+F8C     lcdlat
+F95     lcdtris
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const837.call
+00001E  @delay_ms1
+000046  lcd_send_nibble
+00005E  lcd_read_nibble
+00006A  lcd_read_byte
+0000A8  lcd_send_byte
+0000E2  lcd_init
+00015A  @MUL1616
+00017A  @DIV1616
+0001BE  lcd_gotoxy
+0001E0  lcd_putc
+000230  @PSTRINGCN_672
+000250  @DIV88
+000278  @PRINTF_U_672
+0002E0  MAIN
+0002E0  @cinit1
+0002F0  @cinit2
+
+Project Directory:
+    C:\Users\Victor López Salazar\Desktop\
+
+Project Files:
+    temperatura.c                                           [12-jun.-20 23:07  CRC=7920CB9D]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [12-nov.-13 14:35  CRC=5337E248]
+    ..\..\..\Program Files (x86)\PICC\Drivers\lcd.c         [19-sep.-13 15:38  CRC=D1A6378A]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [28-sep.-12 11:35  CRC=546412C9]
+
+Source signature=46C70B01
+
+Units:
+    temperatura (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   temperatura.xsym
+    Errors:      temperatura.err
+    Ext Symbols: temperatura.esym
+    INHX32:      temperatura.hex
+    Symbols:     temperatura.sym
+    List:        temperatura.lst
+    Debug/COFF:  temperatura.cof
+    Project:     temperatura.ccspjt
+    Call Tree:   temperatura.tre
+    Statistics:  temperatura.STA

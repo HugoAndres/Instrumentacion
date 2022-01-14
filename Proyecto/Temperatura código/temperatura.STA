@@ -1,0 +1,60 @@
+
+ROM used:   934/32768 (3%)
+            934/32768 (3%) including unused fragments
+
+            0.3 Average locations per line
+            2.6 Average locations per statement
+
+RAM used:   6/2048 (0%) at main() level
+            24/2048 (1%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   35    17   5  temperatura.c
+  837     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+  456    84  23  ..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+ 2229   257  72  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+----- -----
+ 3557   358 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   2    1             @delay_ms1
+0     62   3    3   596  5.9  lcd_read_byte
+0     12   1    0    59  4.2  lcd_read_nibble
+0     24   1    1   179  3.3  lcd_send_nibble
+0     58   3    3   460  4.7  lcd_send_byte
+0    120   6    6   814  7.2  lcd_init
+0     34   2    4   208  6.3  lcd_gotoxy
+0     80   4    1   354  4.7  lcd_putc
+0    198  11    2   454  5.1  MAIN
+0     32   2    5             @MUL1616
+0     68   4    5             @DIV1616
+0     26   1    0             @const837
+0     32   2    3             @PSTRINGCN_672
+0     40   2    3             @DIV88
+0    104   6    2             @PRINTF_U_672
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               8
+    Statements              358
+    Comments                508
+    Volume (V)              4737
+    Difficulty (D)          39.4
+    Effort to implement (E) 186546
+    Time to implement (T)   2 hours, 53 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   9
+    Maintainability (MI)    65
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   930  31834  
+
+
+
