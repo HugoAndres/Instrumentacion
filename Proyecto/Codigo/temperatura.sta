@@ -1,0 +1,64 @@
+
+ROM used: 1818 (6%)
+          1818 (6%) including unused fragments
+
+          2 Average locations per line
+          22 Average locations per statement
+
+RAM used: 11 (1%) at main() level
+          25 (1%) worst case
+
+Stack used: 6 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   46    15  18  temperatura.c
+  451     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+  348    67  82  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
+----- -----
+  845    82 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1   1             @delay_ms1
+0     20   1   0             @const76
+0     62   2   3   587  6.0  lcd_read_byte
+0     12   0   0    59  4.2  lcd_read_nibble
+0     26   1   1   172  3.4  lcd_send_nibble
+0     52   1   3   317  4.3  lcd_send_byte
+0     96   3   2   624  5.8  lcd_init
+0     34   1   4   186  5.5  lcd_gotoxy
+0     68   2   1   272  4.1  lcd_putc
+0    322   9   4   456  6.0  MAIN
+0     56   2   2             @ITOF
+0    244   7  11             @MULFF
+0    348  10  14             @DIVFF
+0     58   2   4             @SFTOI
+0     40   1   3             @DIV88
+0    110   3   2             @PRINTF_U_9600_31766_31767
+0     30   1   0             @const123
+0     30   1   3             @PSTRINGCN_93
+0    104   3   2             @PRINTF_U_93
+0     30   1   0             @const129
+0     32   1   2             @PSTRINGC_93
+0      2   0   0             @const131
+
+Program metrics:
+    Functions               8
+    Statements              82
+    Comments                186
+    Volume (V)              4116
+    Difficilty (D)          36.7
+    Effort to implement (E) 151063
+    Time to implement (T)   2 hours, 20 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   8
+    Maintainability (MI)    147
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1814  30950  
+
+
+

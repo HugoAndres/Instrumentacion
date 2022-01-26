@@ -1,0 +1,133 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 lecturadigital
+006     temp
+007-00A @SFTOI.P1
+007     lcd_init.i
+007     @PRINTF_U_93.P1
+007     @PSTRINGCN_93.P2
+007-008 @ITOF.P3
+007     @PRINTF_U_9600_31766_31767.P4
+007     MAIN.@SCRATCH1
+007     @PSTRINGC_93.@SCRATCH1
+008     @PRINTF_U_9600_31766_31767.P1
+008     @PRINTF_U_93.P2
+008     lcd_init.@SCRATCH1
+008     MAIN.@SCRATCH2
+008     @PSTRINGCN_93.@SCRATCH1
+008     @PSTRINGC_93.@SCRATCH2
+009     @DIV88.P1
+009     MAIN.@SCRATCH3
+009     @PSTRINGCN_93.@SCRATCH2
+00A     lcd_putc.c
+00A     @DIV88.P1
+00A     MAIN.@SCRATCH4
+00B     @delay_ms1.P1
+00B-00E @DIVFF.P2
+00B     lcd_gotoxy.x
+00B-00E @MULFF.P1
+00B     @DIV88.@SCRATCH1
+00C     lcd_gotoxy.y
+00D     lcd_gotoxy.address
+00E     lcd_gotoxy.@SCRATCH1
+00F     lcd_send_byte.address
+00F-012 @MULFF.P1
+00F-012 @DIVFF.P2
+010     lcd_send_byte.n
+011     lcd_read_byte.low
+011     lcd_send_byte.@SCRATCH1
+012     lcd_send_nibble.n
+012     lcd_read_byte.high
+013     lcd_read_byte.@SCRATCH1
+013     @MULFF.@SCRATCH1
+013     @DIVFF.@SCRATCH1
+014     @MULFF.@SCRATCH2
+014     @DIVFF.@SCRATCH2
+015     @MULFF.@SCRATCH3
+015     @DIVFF.@SCRATCH3
+016     @DIVFF.@SCRATCH4
+017     @DIVFF.@SCRATCH5
+018     @DIVFF.@SCRATCH6
+F83     lcd
+F83     PSP_DATA
+F8C     lcdlat
+F95     lcdtris
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0056  @delay_ms1
+0004  LCD_INIT_STRING
+00A2  lcd_read_byte
+0096  lcd_read_nibble
+007C  lcd_send_nibble
+00E0  lcd_send_byte
+0114  lcd_init
+04CC  lcd_gotoxy
+04EE  lcd_putc
+05D8  MAIN
+0174  @ITOF
+01AC  @MULFF
+02A0  @DIVFF
+03FC  @SFTOI
+0436  @DIV88
+045E  @PRINTF_U_9600_31766_31767
+0018  @const123
+0532  @PSTRINGCN_93
+0550  @PRINTF_U_93
+0036  @const129
+05B8  @PSTRINGC_93
+0054  @const131
+05D8  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\Hugo Andres MM\Desktop\Cuarentena\INSTRUMENTACIÓN\Proyecto\Codigo\
+
+Project Files:
+    temperatura.c
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
+
+Units:
+    C:\Users\Hugo Andres MM\Desktop\Cuarentena\INSTRUMENTACIÓN\Proyecto\Codigo\temperatura (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      temperatura.err
+    Ext Symbols: temperatura.esym
+    INHX32:      temperatura.hex
+    Symbols:     temperatura.sym
+    List:        temperatura.lst
+    Debug/COFF:  temperatura.cof
+    Project:     temperatura.PJT
+    Call Tree:   temperatura.tre
+    Statistics:  temperatura.sta
